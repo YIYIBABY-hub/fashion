@@ -1,0 +1,165 @@
+#person_info{
+	width:100%;
+}
+#person_info>h3{
+	width:1280px;
+	height:40px;
+	margin:0 auto;
+	margin-top: 10px;
+	font-size: 16px;
+	font-weight: 700;
+}
+#person_info #content{
+	width:1280px;
+	margin:0 auto;
+	margin-bottom: 50px;
+	overflow: hidden;
+}
+#person_info #content .content_left{
+	width:181px;
+	border-right:1px solid #000;
+	padding:30px 0;
+	float: left;
+}
+#person_info #content .content_left ul li{
+	height:30px;
+	line-height: 30px;
+	font-size: 16px;
+}
+#content .content_right{
+	width:1020px;
+	float: right;
+	text-align: center;
+}
+#content .content_right .content_info{
+	position: relative;
+	width:1020px;
+	margin:0 auto;
+}
+#content .content_right .content_info>h3{
+	font-size: 16px;
+	height:40px;
+	line-height:40px;
+	font-weight: 700;
+}
+#content .content_right .content_info .info_table{
+	position: relative;
+	width:998px;
+	padding:10px;
+	border:1px solid #999999;
+	text-align: left;
+	margin-bottom: 30px;
+}
+#content .content_right .content_info .info_table ul{
+	display: inline-block;
+}
+#content .content_right .content_info .info_table ul li{
+		float: left;
+		width:370px;
+		line-height:30px;
+		font-size: 14px;
+}
+#content .content_right .content_info .info_table span{
+	width:80px;
+	display: inline-block;
+}
+#content .content_right .content_info .info_table .btn_modify{
+	position:absolute;
+	right:50px;
+	top:43px;
+	font-size:14px;
+	width:110px;
+	height:26px;
+	background: #000000;
+	color: #FFFFFF;
+	border: none;
+	border-radius: 5px;
+}
+#content .content_right .content_info table.info_vip{
+	text-align: left;
+	background-color: #FFFFFF;
+	width:1020px;
+	border-bottom: 1px solid #999999;
+	border-right:1px solid #999999;
+	border-spacing: 0px;
+	margin-bottom:30px;
+	font-size: 14px;
+}
+#content .content_right .content_info table td{
+	width:50%;
+	height:40px;
+	padding-left:10px;
+	border-top:1px solid #999;
+	border-left:1px solid #999;
+	text-align: left;
+}
+#content .content_right .content_info table.info_site{
+	text-align: left;
+	background-color: #fff;
+	width:1020px;
+	border-bottom: 1px solid #999;
+	border-right:1px solid #999;
+	border-left:1px solid #999;
+	border-spacing: 0;
+	font-size: 14px;
+}
+#content .content_right .content_info .add_site{
+	position:absolute;
+	right:0;
+	font-size:14px;
+}
+#content .content_right .content_info table.info_site th{
+	background-color: #f2f2f2;
+	font-weight: 400;
+	width:80px;
+	height:40px;
+	text-align:left;
+	border-top:1px solid #999;
+	padding-left:5px;
+}
+/* 修改个人信息弹窗 */
+#content .content_right .content_info .modify_div{
+	position: relative;
+	width:760px;
+	height:300px;
+	border:2px solid #000;
+	background: #fff;
+}
+#content .content_right .content_info .modify_div img{
+	position: absolute;
+	right:0;
+	top:0;
+	width:34px;
+	cursor:pointer;
+}
+#content .content_right .content_info .modify_div h4{
+	font-size: 16px;
+	text-align: left;
+	padding-left: 3%;
+	margin:20px 0;
+}
+#content .content_right .content_info .modify_div ul li{
+	width:47%;
+	margin-left: 3%;
+	float: left;
+	text-align: left;
+	height:34px;
+	font-size: 14px;
+}
+#content .content_right .content_info .modify_div input{
+	height:22px;
+	line-height: 22px;
+	vertical-align: middle;
+}
+#content .content_right .content_info .modify_div button{
+	padding:5px 15px;
+	background-color: #000000;
+	color: #FFFFFF;
+	margin-right: 20px;
+	border: none;
+	margin-top: 15px;
+}
+#content .content_right .content_info .modify_div label{
+	display: inline-block;
+	width: 50px;
+}
