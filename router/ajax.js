@@ -71,5 +71,31 @@ ru.put('/modify',(req,res)=>{
 			res.send('1');
 		}
 	})
+});
+//个人信息页面住址表格的查询
+ru.get('/select_add/:phone',(req,res)=>{
+	let _phone=req.params.phone;
+	let sql="SELECT * FROM fs_user_add WHERE phone=?";
+	pool.query(sql,[_phone],(err,result)=>{
+		if(err) throw err;
+		if(result.length>0){
+			res.send(result);
+		}else{
+			res.send('0');
+		}
+	})
+});
+//个人信息页面添加新地址到fs_user_add中
+ru.post('/add_site',(req,res)=>{
+	let obj=req.body;
+	let sql="INSERT INTO fs_user_add SET ?";
+	pool.query(sql,[obj],(err,result)=>{
+		if(err) throw err;
+		if(result.affectedRows>0){
+			res.send('1');
+		}else{
+			res.send('0');
+		}
+	})
 })
 module.exports=ru;

@@ -1,3 +1,10 @@
+function verify() {
+	//初始化验证码
+	verifyCode = new GVerify({
+		id: "picyzm",
+		type: "blend"
+	});
+}
 function login(){
 			var _phone=input_phone.value;
 			var _password=input_password.value;

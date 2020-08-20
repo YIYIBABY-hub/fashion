@@ -6,9 +6,10 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title></title>
 	<link rel="stylesheet" href="css/main.css" type="text/css">
+	<script type="text/javascript" src="js/gVerify.js"></script>
 	<script type="text/javascript" src="js/login.js"></script>
 </head>
-<body>
+<body onload="verify()">
 	<div class="headerTopside">
 		<div class="headTopcenter">
 			<div>1件包邮</div>
@@ -69,7 +70,7 @@
 	<!-- 导航栏结束 -->
 	<!-- 主体部分 -->
 	<div class="main_outerDiv">
-		<div>
+			<div class="mainDivimg">
 			<img src="images/loginBottom.jpg" >
 		</div>
 		<div class="login_box">
@@ -86,7 +87,7 @@
 							<label for="input_security" class="text_s"></label>
 							<input type="text" id="input_security" placeholder="请输入正确答案" />
 						</div>
-						<img src="images/loginBottom.jpg">
+						<p id="picyzm"></p>
 					</div>
 					<div class="password">
 						<!-- <input type="text" name="" placeholder="请输入短信验证码" />

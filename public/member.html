@@ -7,7 +7,7 @@
 		<title></title>
 		<link rel="stylesheet" type="text/css" href="css/main.css">
 		<link rel="stylesheet" type="text/css" href="css/info.css" />
-		<script type="text/javascript" src='js/personInfo.js'></script>
+		<link rel="stylesheet" type="text/css" href="css/member.css" />
 	</head>
 	<body onload="showInfo()">
 		<div class="headerTopside">
@@ -70,122 +70,32 @@
 		<!-- 导航栏结束 -->
 		<!-- 主体部分 -->
 		<div id="person_info">
-			<h3>首页 / 个人信息</h3>
+			<h3>首页 / 会员中心首页</h3>
 			<div id="content">
 				<div class="content_left">
 					<ul>
-						<li>会员中心首页</li>
+						<li class="red">会员中心首页</li>
 						<li>积分商城</li>
 						<li>积分兑换优惠</li>
 						<li>订单历史记录</li>
-						<li class="red">个人信息</li>
+						<li>个人信息</li>
 						<li>我拥有的优惠</li>
 						<li>顾客服务</li>
 					</ul>
 				</div>
 				<div class="content_right">
 					<div class="content_info">
-						<h3>您的个人信息</h3>
-						<div class="info_table">
-							<ul>
-								<li><span>姓名:</span><span id="info_span_uname"></span></li>
-								<li><span>手机号:</span><span id="info_span_phone"></span></li>
-								<li><span>性别:</span><span id="info_span_gender"></span></li>
-								<li><span>Email:</span><span id="info_span_email"></span></li>
-								<li><span>生日:</span><span id="info_span_birthday"></span></li>
-							</ul>
-							<button id="btn_info_modify" class="btn_modify" onclick="modifyInfo()">修改个人信息</button>
-						</div>
-						<h3>我的会员信息</h3>
-						<table class="info_vip">
-							<tr>
-								<td>您的会员级别：普通会员</td>
-								<td>总积分：100.0</td>
-							</tr>
-							<tr>
-								<td>您的会员卡号：OL0005916207</td>
-								<td>可用积分：100.0</td>
-							</tr>
-							<tr>
-								<td colspan="2">此等级会员开始时间：2020-07-30 17:45:26</td>
-							</tr>
-						</table>
-						<h3>您的收件地址
-							<span class="add_site">+添加新地址</span>
-						</h3>
-						<div id="div_table_add">
-						</div>
-						<div class="modify_div">
-							<img src="images/02_modify.png">
-							<h4>修改你的个人信息</h4>
-							<ul>
-								<li><span>姓名：</span><span id="modyfi_display_uname"></span></li>
-								<li><span>性别：</span><span id="modyfi_display_gender"></span></li>
-								<li>
-									<span>修改姓名：</span>
-									<input type="text" id="modyfi_info_uname" />
-								</li>
-								<li><span>修改性别：</span>
-									<input type="radio" name="modifysex" id="nan_modify" value="" />
-									<label for="nan_modify">男</label>
-									<input type="radio" name="modifysex" id="nv_modify" value="" />
-									<label for="nv_modify">女</label>
-								</li>
-								<li><span>手机号码：</span><span id="modyfi_display_phone"></span></li>
-								<li></li>
-								<li><span>邮箱地址：</span><span id="modyfi_display_email"></span></li>
-								<li><span>生日：</span><span id="modyfi_display_birthday"></span></li>
-								<li>
-									<span>修改邮箱地址：</span>
-									<input type="text" name="" id="modyfi_info_email" value="" />
-								</li>
-								<li>
-									<span>修改生日：</span>
-									<input type="date" id="modyfi_info_birthday" />
-								</li>
-								<li>
-									<button onclick="saveModify()">保存修改</button>
-									<button>取消</button>
-								</li>
-							</ul>
-						</div>
-						<div class="add_info_site">
-							<img src="images/02_modify.png">
-							<h4>收货地址</h4>
-							<ul>
-								<li>
-									<p>
-										<span>*</span>
-										收货人姓名：</p>
-									<input type="text" id="input_add_username"/>
-									<label id="add_label1"></label>
-								</li>
-								<li>
-									<p>
-										<span>*</span>
-										收货人电话：</p>
-									<input type="text" id="input_add_addphone"/>
-									<label id="add_label2"></label>
-								</li>
-								<li>
-									<p>
-										<span>*</span>
-										省市区：</p>
-										<input class="select_input" type="text" id="input_add_district"/>
-										<label id="add_label3"></label>
-								</li>
-								<li>
-									<p>
-										<span>*</span>
-										街道地址：</p>
-									<input type="text" id="input_add_detail"/>
-									<label id="add_label4"></label>
-								</li>
-								<li>
-									<button onclick="addInfoSite()">保存</button>
-									<button>取消</button>
-								</li>
-							</ul>
+						<h3>您好，13513896018，欢迎来到LOGO</h3>
+						<div class="topContent">
+							<div class="left">
+								<p>可用积分</p><span class="red">100.0</span>
+							</div>
+							<div class="center">
+								<p>我的优惠券</p><span class="red">0</span>
+							</div>
+							<div class="right">
+								<p>您目前状态</p><span class="red">普通会员</span>
+							</div>
 						</div>
 					</div>
 				</div>

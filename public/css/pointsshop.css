@@ -1,0 +1,37 @@
+.content_info .line3{
+	height:1px;
+	background-color: #999;
+	width: 100%;;
+}
+.topContent{
+	width: 100%;
+	margin: 10px auto;
+	display: flex;
+	justify-content: center;
+}
+.topContent ul li{
+	width: 185px;height: 376px;
+	text-align: center;
+	font-size: 14px;
+	margin-right:19px;
+	margin-top: 15px;
+}
+.content_img{
+	width: 100%;
+	height:266px;
+}
+.content_img>img{
+	width: 100%;
+}
+.topContent ul{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: start;
+}
+.topContent ul li .img_title{
+	padding: 10px 0;
+}
+.padding10{
+	padding-top:10px;
+}

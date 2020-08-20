@@ -56,6 +56,62 @@ function showInfo(){
 	console.log(`/ajax/info/${_phone}`);
 	xhr.open('get',`/ajax/info/${_phone}`,true);
 	xhr.send();
+	showAddInfo(_phone);
+}
+function showAddInfo(_phone){
+	var xhr=new XMLHttpRequest();
+	xhr.onreadystatechange=function(){
+		if(xhr.readyState==4 && xhr.status==200){
+			var r=xhr.responseText;
+			if(r==0){
+				div_table_add.innerHTML=`
+				<table class="info_site">
+					<tr class="tr_border">
+						<th>收货人</th>
+						<th>所在区</th>
+						<th>详细地址</th>
+						<th>电话/手机</th>
+						<th>操作</th>
+					</tr>
+					</table>
+				`;
+			}else{
+				var arr=JSON.parse(r);
+				var str='';
+				str=`
+				<table class="info_site">
+					<tr class="tr_border">
+						<th>收货人</th>
+						<th>所在区</th>
+						<th>详细地址</th>
+						<th>电话/手机</th>
+						<th>操作</th>
+					</tr>
+				`;
+				for(var i=0;i<arr.length;i++){
+					var reg=/(\d{3})\d{4}(\d{4})/;
+					var page_phone=arr[i].add_phone.replace(reg,'$1****$2');
+					str+=`
+					<tr>
+						<td>${arr[i].user_name}</td>
+						<td>${arr[i].district}</td>
+						<td>${arr[i].detail}</td>
+						<td>${page_phone}</td>
+						<td>
+							<button>修改</button>
+							<button>删除</button>
+							<button>默认地址</button>
+						</td>
+					</tr>
+					`;
+				}
+				str+=`</table>`;
+				div_table_add.innerHTML=str;
+			}
+		}
+	}
+	xhr.open('GET',`/ajax/select_add/${_phone}`,true);
+	xhr.send();
 }
 function saveModify(){
 	var obj=new URLSearchParams(location.search);
@@ -104,5 +160,44 @@ function saveModify(){
 	xhr.open('PUT','/ajax/modify',true);
 	xhr.setRequestHeader('Content-Type','application/x-www-form-urlencoded');
 	var formdata=`phone=${_phone}&uname=${_uname}&gender=${sex}&email=${_email}&birthday=${_birthday}`;
+	xhr.send(formdata);
+}
+function addInfoSite(){
+	var obj=new URLSearchParams(location.search);
+	var _phone=obj.get('phone');
+	var _addusername=input_add_username.value;
+	var _addaddphone=input_add_addphone.value;
+	var _adddistrict=input_add_district.value;
+	var _adddetail=input_add_detail.value;
+	if(!_addusername){
+		add_label1.innerHTML='姓名不能为空';
+		return;
+	}
+	if(!_addaddphone){
+		add_label2.innerHTML='电话不能为空';
+		return;
+	}
+	if(!_adddistrict){
+		add_label3.innerHTML='省市区不能为空';
+		return;
+	}
+	if(!_adddetail){
+		add_label4.innerHTML='街道不能为空';
+		return;
+	}
+	var xhr=new XMLHttpRequest();
+	xhr.onreadystatechange=function(){
+		if(xhr.readyState==4 && xhr.status==200){
+			var r=xhr.responseText;
+			if(r==0){
+				alert('新增失败');
+			}else{
+				alert('新增成功');
+			}
+		}
+	}
+	xhr.open('POST','/ajax/add_site',true);
+	xhr.setRequestHeader('Content-Type','application/x-www-form-urlencoded');
+	var formdata=`user_name=${_addusername}&district=${_adddistrict}&detail=${_adddetail}&add_phone=${_addaddphone}&phone=${_phone}`;
 	xhr.send(formdata);
 }

@@ -6,9 +6,10 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title></title>
 	<link rel="stylesheet" href="css/main.css" type="text/css">
+	<script type="text/javascript" src="js/gVerify.js"></script>
 	<script type="text/javascript" src="js/reg.js"></script>
 </head>
-<body>
+<body onload="verify()">
 	<div class="headerTopside">
 		<div class="headTopcenter">
 			<div>1件包邮</div>
@@ -69,7 +70,7 @@
 	<!-- 导航栏结束 -->
 	<!-- 主体部分 -->
 	<div class="main_outerDiv">
-		<div>
+		<div class="mainDivimg">
 			<img src="images/loginBottom.jpg" >
 		</div>
 		<div class="login_box">
@@ -86,7 +87,7 @@
 							<label for="input_security" class="text_s"></label>
 							<input type="text" id="input_security" placeholder="请输入正确答案" />
 						</div>
-						<img src="images/loginBottom.jpg">
+						<p id="picyzm"></p>
 					</div>
 					<div class="password">
 						<!-- <input type="text" name="" placeholder="请输入短信验证码" />
@@ -97,13 +98,14 @@
 						<span class="red" id="span_password"></span>
 					</div>
 					<div class="rule">
-						<input type="checkbox" name="" id="" value="" />
+						<input type="checkbox" name="" id="check_box" value="" />
 						<div class="rule_text">
 							<p>阅读并同意<span>《用户服务协议》</span>及<span>《用户隐私政策》</span>，勾选后即表示您已充分阅读、理解并接受协议的全部内容。</p>
 						</div>
 					</div>
 					<button onclick="register()" class="login_btn">立即注册</button>
 					<span class="red" id="span_btn"></span>
+					<span class="red" id="span_ver"></span>
 				</div>
 			</div>
 		</div>

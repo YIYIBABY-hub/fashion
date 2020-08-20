@@ -85,7 +85,7 @@
 	margin-bottom:30px;
 	font-size: 14px;
 }
-#content .content_right .content_info table td{
+#content .content_right .content_info table.info_vip td{
 	width:50%;
 	height:40px;
 	padding-left:10px;
@@ -102,20 +102,58 @@
 	border-left:1px solid #999;
 	border-spacing: 0;
 	font-size: 14px;
+	table-layout: fixed;
+}
+#content .content_right .content_info table.info_site tr th:nth-child(1){
+	width:85px;
+}
+#content .content_right .content_info table.info_site tr th:nth-child(2){
+	width:203px;
+}
+#content .content_right .content_info table.info_site tr th:nth-child(3){
+	width:302px;
+}
+#content .content_right .content_info table.info_site tr th:nth-child(4){
+	width:125px;
 }
 #content .content_right .content_info .add_site{
 	position:absolute;
 	right:0;
 	font-size:14px;
 }
-#content .content_right .content_info table.info_site th{
-	background-color: #f2f2f2;
+#content .content_right .content_info table.info_site td,#content .content_right .content_info table.info_site th{
+	background-color: #FFFFFF;
 	font-weight: 400;
-	width:80px;
 	height:40px;
 	text-align:left;
 	border-top:1px solid #999;
 	padding-left:5px;
+	box-sizing: border-box;
+}
+#content .content_right .content_info table.info_site th{
+	background-color: #f2f2f2;
+}
+#content .content_right .content_info table.info_site tr td button:nth-child(1),#content .content_right .content_info table.info_site tr td button:nth-child(2){
+	width:58px;
+	height:26px;
+	background-color: #000;
+	color:#fff;
+	font-size: 14px;
+	line-height: 16px;
+	border-radius: 5px;
+	border: 0;
+	outline: 0;
+}
+#content .content_right .content_info table.info_site tr td button:nth-child(3){
+	width:86px;
+	height:26px;
+	background-color: #ff0000;
+	color:#fff;
+	font-size: 14px;
+	line-height: 16px;
+	border-radius: 5px;
+	border: 0;
+	outline: 0;
 }
 /* 修改个人信息弹窗 */
 #content .content_right .content_info .modify_div{
@@ -158,8 +196,66 @@
 	margin-right: 20px;
 	border: none;
 	margin-top: 15px;
+	border-radius: 5px;
 }
 #content .content_right .content_info .modify_div label{
 	display: inline-block;
 	width: 50px;
+}
+#content .content_right .content_info .add_info_site{
+	position: relative;
+	width: 764px;
+	height: 404px;
+	border: 2px solid #000;
+}
+#content .content_right .content_info .add_info_site img{
+	position: absolute;
+	top:0;
+	right:0;
+	width:34px;
+	cursor:pointer;
+}
+#content .content_right .content_info .add_info_site h4{
+	font-size: 16px;
+	text-align: left;
+	padding-left: 3%;
+	margin:20px 0;
+}
+#content .content_right .content_info .add_info_site ul{
+	text-align: left;
+	padding: 3%;
+	font-size: 14px;
+}
+#content .content_right .content_info .add_info_site ul li p{
+	height:30px;
+	line-height:30px;
+}
+#content .content_right .content_info .add_info_site ul li p span{
+	color:red;
+}
+#content .content_right .content_info .add_info_site ul li input{
+	width:300px;
+	height:28px;
+	line-height:28px;
+	border:1px solid #000;
+	padding:0 5px;
+}
+#content .content_right .content_info .add_info_site ul li button{
+	width: 58px;
+	height: 26px;
+	background-color: #000000;
+	color:#fff;
+	border-radius: 5px;
+	border: 0;
+	outline: 0;
+	margin-top:20px;
+	margin-right: 30px;
+}
+#content .content_right .content_info .add_info_site ul li .select_input{
+	width:150px;
+	margin-right:22px;
+}
+#content .content_right .content_info .add_info_site ul li label{
+	color:red;
+	font-size: 14px;
 }
