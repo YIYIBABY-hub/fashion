@@ -6,8 +6,8 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title></title>
 	<link rel="stylesheet" href="css/main.css" type="text/css">
-	<script type="text/javascript" src="js/gVerify.js"></script>
-	<script type="text/javascript" src="js/login.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/cart.css"/>
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
 </head>
 <body onload="verify()">
 	<div class="headerTopside">
@@ -48,7 +48,7 @@
 		</div>
 	</div>
 	</div>
-<!-- 导航栏开始 -->
+	<!-- 导航栏开始 -->
 	<div class="defaultHeader">
 		<div class="defaultTopF2">
 			<a href="index.html">
@@ -69,40 +69,88 @@
 	</div>
 	<!-- 导航栏结束 -->
 	<!-- 主体部分 -->
-	<div class="main_outerDiv">
-			<div class="mainDivimg">
-			<img src="images/loginBottom.jpg" >
+	<div class="cart">
+		<h2>首页 / 购物车</h2>
+		<div class="cart_button">
+			购物车
 		</div>
-		<div class="login_box">
-			<div class="login_wrapper">
-				<p class="login_ph">会员登录</p>
-				<div class="init_login">
-					<div class="username">
-						<label for="input_phone" class="text_r"></label>
-						<input type="text" name="phone" id="input_phone" placeholder="请输入手机号登录"/>
-						<span id="span_phone" class="red"></span>
-					</div>
-					<div class="sec_wrapper">
-						<div class="security">
-							<label for="input_security" class="text_s"></label>
-							<input type="text" id="input_security" placeholder="请输入正确答案" />
+		<table class="table1">
+			<tr>
+				<th>1.查看购物车</th>
+				<th>2.填写并核对订单</th>
+				<th>3.成功提交订单</th>
+			</tr>
+			<tr>
+				<td></td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
+		<h3>订单摘要</h3>
+		<div class="small_right">
+			1个结果
+		</div>
+		<table class="table2">
+			<tr>
+				<th><input type="checkbox"/><span>全选</span></th>
+				<th>商品描述</th>
+				<th>颜色</th>
+				<th>尺码</th>
+				<th>数量</th>
+				<th>单价</th>
+				<th>总价</th>
+			</tr>
+			<tr>
+				<td colspan="7">
+					<div class="table_content">
+						<div class="col1"><input type="checkbox"/><img src="images/07_cart.jpg" ></div>
+						<div class="col2">可爱动物刺绣短袖T恤</div>
+						<div class="col3">
+							<select>
+								<option>奶油白色NEW CREAME</option>				
+								<option>兰花紫ORICHID HUSH</option>				
+							</select>
 						</div>
-						<p id="picyzm"></p>
+						<div class="col4">
+							<select>
+								<option>170/88A/L</option>				
+								<option>--请选择尺码--</option>	
+								<option>155/76A/XS</option>
+							</select>
+						</div>
+						<div class="col5">
+							<div>
+								<div class="input_div">0</div>
+								<div class="input_btn">
+									<div class="div_up">
+										<i class="fa fa-angle-up"></i>
+									</div>
+									<div class="div_down">
+										<i class="fa fa-angle-down"></i>
+									</div>
+								</div>
+							</div>
+							<div class="storge">
+								库存:<span class="red"> 0 </span>件
+							</div>
+						</div>
+						<div class="col6">¥99.5</div>
+						<div class="col7">
+							<span>¥99.5</span>
+							<a href="#">从购物车中删除</a>
+						</div>
 					</div>
-					<div class="password">
-						<!-- <input type="text" name="" placeholder="请输入短信验证码" />
-						<button type="button" class="pass_btn">获取验证码</button>
-						<span class="red"></span> -->
-						<label for="input_password" class="text_p"></label>
-						<input type="password" id="input_password" placeholder="请输入密码" />
-						<span class="red" id="span_password"></span>
-					</div>
-					<button onclick="login()" class="login_btn">立即登录</button>
-					<span class="red"></span>
-				</div>
-				<div class="tip">
-					<p>若您尚未注册会员，<a href="register.html" class="red">请点击注册</a></p>
-				</div>
+				</td>
+			</tr>
+		</table>	
+		<div class="input_bottom"><input type="checkbox" />全选</div>
+		<div class="input_action">
+			<a href="#">继续购物</a>
+			<div class="action_right">
+				<span class="red">花费的积分:PST 0</span>
+				<span class="red">应付金额:¥ 0</span>
+				<span class="red">商品总金额:¥0</span>
+				<a href="#">结算</a>
 			</div>
 		</div>
 	</div>

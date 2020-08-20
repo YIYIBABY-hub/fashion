@@ -1,0 +1,64 @@
+.content_info .line3{
+	height:1px;
+	background-color: #999;
+	width: 100%;;
+}
+.topContent{
+	width: 100%;
+	margin: 20px auto;
+}
+.topContent .content_title{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	font-size: 14px;
+	margin-bottom: 20px;
+}
+.title_right{
+	display: flex;
+	justify-content: end;
+	align-items: center;
+}
+.title_right div{
+	width: 18px;height: 18px;
+	border:1px solid #ddd;
+	line-height: 15px;
+	text-align: center;
+}
+table{
+	width: 100%;
+	border-collapse: collapse;
+	font-size: 14px;
+}
+.table1 table tr th{
+	position: relative;
+	width:20%;
+	height: 30px;
+	border: 1px solid #000;
+	font-weight: 400;
+}
+.table1 table tr th:first-child{
+	background-color: #000000;
+	color: #FFFFFF;
+}
+.table_badge{
+	position: absolute;
+	right:2px;
+	top:2px;
+	display: inline-block;
+	width: 18px;height: 18px;
+	line-height: 18px;
+	text-align: center;
+	border-radius: 50%;
+	background-color: red;
+	color:#fff;
+	font-size: 12px;
+}
+.table2{
+	background-color:#f2f2f2 ;
+	margin-top: 20px;
+}
+.table2 table tr th{
+	width: 25%;
+	height:35px;
+}

@@ -26,6 +26,9 @@
 	line-height: 30px;
 	font-size: 16px;
 }
+#person_info #content .content_left ul li a{
+	color:#000;
+}
 #content .content_right{
 	width:1020px;
 	float: right;

@@ -85,6 +85,9 @@ li {
 	margin: 0 auto;
 	padding-top: 30px;
 }
+.defaultHeader .defaultTopF2 ul li a{
+	color:#000;
+}
 
 .defaultHeader .defaultTopF2 .paddingBottom {
 	padding-bottom: 1px;

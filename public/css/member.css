@@ -1,3 +1,4 @@
+/* 会员中心首页 */
 .topContent{
 	width: 650px;
 	margin: 10px auto;
@@ -21,4 +22,55 @@
 }
 .topContent div span{
 	font-weight: 700;
+}
+/* 会员中心首页结束 */
+/* 顾客服务 */
+.customer_button{
+	width: 100%;
+	height:40px;
+	background-color: #000000;
+	color:#fff;
+	font-size: 16px;
+	line-height: 40px;
+	text-align: center;
+}
+.customer_text{
+	margin-top:20px;
+	text-align: left;
+	font-size: 15px;
+}
+.customer_text p{
+	line-height: 24px;
+}
+.customer_text ul li{
+	font-size: 14px;
+	line-height: 24px;
+	list-style: disc;
+	margin-left:50px;
+}
+.customer_text ol li{
+	font-size: 14px;
+	line-height: 24px;
+	margin-left:50px;
+}
+.customer_text div{
+	margin-left:40px;
+	font-size: 14px;
+	line-height: 24px;
+}
+/* 顾客服务结束 */
+/* 优惠券页面*/
+.content_info h3{
+	border-bottom: 1px solid #999;
+}
+.content_info select{
+	width:200px;
+	height: 30px;
+	border:1px solid #000;
+	margin:0 20px;
+}
+.coupon_content{
+	margin-top:20px;
+	text-align: left;
+	font-size: 16px;
 }

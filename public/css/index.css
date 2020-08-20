@@ -24,10 +24,14 @@
 	text-align: center;
 }
 .newbox1{
-	width: 603px;
+	width: 602px;
 	top:140px;
 	left:0;
 	font-size: 0;
+}
+.newbox1>a>img:hover,.newbox2>a>img:hover,.newbox3>a>img:hover{
+	transform: scale(1.05);
+	transition: 0.5s ease-out;
 }
 .newbox2{
 	width: 527px;
@@ -99,7 +103,12 @@
 }
 .select_coursel ul li{
 	float:left;
-	width: 20%;height: 399px;
+	width: 20%;height: 399px;	
+}
+.select_coursel ul li img:hover{
+	transform: scale(1.02);
+	transition: 0.4s ease-in-out;
+	cursor: pointer;
 }
 .coursel_direc{
 	width: 100%;
@@ -111,6 +120,7 @@
 	background: #ffdc3f url(../images/00_left.png) no-repeat center center;
 	border-radius: 50%;
 	margin: 0 50px;
+	cursor: pointer;
 }
 .coursel_right{
 	background-image: url(../images/00_right.png);
@@ -137,6 +147,14 @@
 }
 .newArrial_img{
 	margin-top:50px;
+}
+.newArrial_img:hover img{
+	transform: scale(1.1);
+	transition: 10s ease;
+	cursor: pointer;
+}
+.newArrial_img img{
+	transition: 6s ease;
 }
 .topShopping{
 	width: 1280px;
@@ -179,10 +197,35 @@
 	flex-wrap: wrap;
 	font-size: 0;
 }
+.topShopping_right .box1{
+	width: 222px;height: 284px;
+	margin-right: 3px;
+	margin-bottom: 3px;
+	position: relative;
+	overflow: hidden;
+	cursor: pointer;
+}
 .topShopping_right .box1>img{
 	flex:0 0 50%;
   padding-right:3px;
 	padding-bottom: 3px;
+}
+.topShopping_right .box1>em{
+	width: 100%;
+	height:100%;
+	position: absolute;
+	top:0;
+	left:0;
+	background-color:#efeee7 ;
+	opacity: 0.5;
+}
+.topShopping_right .box1>em:hover{
+	opacity: 0;
+	transition: 0.5s ease;
+}
+.topShopping_right .box1:hover>img{
+	transform: scale(1.1);
+	transition: 0.5s ease;
 }
 .topShopping_text{
 	position: absolute;
