@@ -1,0 +1,101 @@
+/* 服务部分 */
+.footer_wrap .line1 {
+	width: 100%;
+	background-color: #000000;
+	height: 1px;
+}
+
+.footer_wrap .footer {
+	width: 1280px;
+	height: 214px;
+	margin: 45px auto;
+	display: -webkit-flex;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.footer_wrap .footer .container1 {
+	width: 280px;
+	text-align: center;
+}
+
+.footer_wrap .footer .container1 .hotimg {
+	margin-bottom: 20px;
+}
+
+.footer_wrap .footer .container1 .textTitle {
+	font-size: 14px;
+	margin-bottom: 20px;
+}
+
+.footer_wrap .footer .container1 .bookNow {
+	width: 155px;
+	height: 30px;
+	text-align: center;
+	font-size: 14px;
+	color: #fff;
+	background-color: #000000;
+	cursor: pointer;
+	line-height: 30px;
+	border: none;
+}
+
+.footer_wrap .footer .columnLine {
+	width: 1px;
+	height: 100%;
+	background-color: #000;
+}
+
+.footer_wrap .footer .container3 {
+	width: 717px;
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 0 80px;
+}
+
+.footer_wrap .footer .container3 .CodeMain {
+	width: 124px;
+}
+
+.footer_wrap .footer .container3 img {
+	height: 124px;
+}
+
+.footer_wrap .footer .container4_wrapper {
+	width: 280px;
+}
+
+.footer_wrap .footer .container4_wrapper .container4 {
+	width: 100%;
+	text-align: center;
+	font-size: 12px;
+}
+
+.footer_wrap .footer .container3 .CodeMainTitle {
+	font-size: 14px;
+	font-weight: 700;
+	text-align: center;
+}
+
+.footer_wrap .footer .container4_wrapper .container4 .img_tel {
+	margin-bottom: 22px;
+}
+
+.footer_wrap .footer .container4_wrapper .container4 p {
+	margin-bottom: 6px;
+}
+
+/* 服务部分结束 */
+/* 页脚 */
+.container {
+	width: 100%;
+	font-size: 12px;
+	text-align: center;
+	margin-bottom: 40px;
+	margin-top: 50px;
+}
+
+/* 页脚结束 */
