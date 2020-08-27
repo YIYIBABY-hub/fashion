@@ -29,6 +29,9 @@
 #person_info #content .content_left ul li a{
 	color:#000;
 }
+#person_info #content .content_left ul li a:hover{
+	color:#ccc;
+}
 #content .content_right{
 	width:1020px;
 	float: right;

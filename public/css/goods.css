@@ -31,21 +31,25 @@
 #contentbox .goods_nav .first_nav {
 	font-size: 14px;
 	font-weight: 700;
+	cursor: pointer;
 }
 
 #contentbox .goods_nav .first_navbox {
 	margin-bottom: 12px;
+	cursor: pointer;
 }
-
-#contentbox .goods_nav .second_nav {
+#contentbox .goods_nav .second_navbox {
+	margin: 15px 0;
+	padding-left: 16px;
+}
+#contentbox .goods_nav .second_navbox a.second_nav {
 	color: #666;
 	font-weight: 400;
 	font-size: 14px;
 }
-
-#contentbox .goods_nav .second_navbox {
-	margin-top: 12px;
-	padding-left: 16px;
+#contentbox .goods_nav .second_navbox:hover a{
+	color:red;
+	text-decoration:underline;
 }
 
 #contentbox .goods_box {
@@ -130,6 +134,33 @@
 	content:"";
 	display: block;
 	clear: both;
+}
+/* 鼠标经过改变图片内容 */
+.parent{
+	position:relative;
+}
+.parent .img_hover{
+	display: none;
+}
+.parent:hover .img_hover{
+	display: block;
+	position: absolute;
+	top:0;
+	left:0;
+	z-index: 10;
+}
+.parent .img_hover a:last-child{
+	display: block;
+	width: 295px;
+	height:50px;
+	font-size: 18px;
+	color:#000;
+	position: absolute;
+	bottom:20px;
+	left:20px;
+	background-color: #fff;
+	text-align: center;
+	line-height: 50px;
 }
 #desc{
 	width: 100%;

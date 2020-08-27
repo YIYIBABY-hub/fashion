@@ -10,6 +10,7 @@
 	margin: 0 auto;
 	font-size: 12px;
 	color: #999;
+	height:30px;
 	line-height: 30px;
 	display: -webkit-flex;
 	display: flex;
@@ -44,34 +45,253 @@
 }
 
 /*顶部导航条结束*/
+/* 导航条二级菜单专属导购 */
+.service_nav{
+	position: relative;
+}
+.service_nav>ul{
+	display: none;
+	position: absolute;
+	top:30px;
+	left:-50px;
+	width: 300px;
+	padding-top: 10px;
+	background-color: #f4f4f4;
+}
+.service_nav:hover>ul{
+	display: block;
+}
+.service_nav>ul>li{
+	font-size: 14px;
+	color:#000;
+	text-align: center;
+}
+.server_img img{
+	width:142px;
+	height:142px;
+}
+.service_tel{
+	background-color: #e4e4e4;
+	padding:5px 0;
+	margin-top:10px;
+	display: flex;
+	justify-content: space-around;
+}
+.service_nav>ul>li>p>span{
+	color:red;
+	border:1px solid red;
+	border-radius: 15px;
+	padding:0 3px;
+	margin:0 3px;
+}
+/* 导航条二级菜单专属导购结束 */
+/* 导航条二级菜单关注微信 */
+.wechat{
+	position: relative;
+}
+.wechat>ul{
+	display: none;
+	width: 185px;
+	background-color: #f4f4f4;
+	padding-top:20px;
+	padding-bottom: 20px;
+	position: absolute;
+	top:30px;
+	left:-30px;
+}
+.wechat:hover>ul{
+	display: block;
+}
+.wechat>ul>li{
+	text-align: center;
+	color:red;
+}
+.wechat>ul>li>img{
+	width: 128px;
+	height: 128px;
+	border:1px solid #ccc;
+	padding:1px;
+}
+/* 导航条二级菜单手机购物 */
+.wechat_phone>ul{
+	left:-130px;
+}
+/* 导航条二级菜单关注微信 */
 /* 导航栏开始 */
 .defaultHeader {
 	width: 100%;
-	height: 60px;
 	font-size: 18px;
 	color: #000;
 }
-
 .defaultHeader .defaultTopF2 {
 	width: 1280px;
-	margin: 0 auto;
-	padding-top: 30px;
+	height: 60px;
+	margin: 30px auto;
+	display: flex;
+	align-items: flex-start;
 }
 .defaultHeader .defaultTopF2 ul li a{
 	color:#000;
 }
-
-.defaultHeader .defaultTopF2 .paddingBottom {
-	padding-bottom: 1px;
-}
-
-.defaultHeader ul {
-	display: inline-block;
-}
-
-.defaultHeader ul li {
-	float: left;
-	margin-left: 36px;
-}
-
 /* 导航栏结束 */
+/* 二级菜单 */
+.defaultTopF2>ul{
+	margin-left:100px;
+}
+.defaultTopF2>ul>li{
+	position: relative;
+	float:left;
+	margin-left:30px;
+	cursor: pointer;
+	padding-bottom: 11px;
+	border-bottom:2px solid transparent;
+}
+.defaultTopF2>ul>li:hover{
+	border-bottom:2px solid #000;
+}
+.defaultTopF2>ul>li>ul{
+	display: none;
+	position: absolute;
+	top:33px;
+	padding-top:20px;
+	width: 600px;
+	font-size:15px;
+	background-color: #fff;
+}
+.defaultTopF2>ul>li>ul.plus_width{
+width: 1050px;
+}
+.defaultTopF2>ul>li>ul>li{
+	float: left;
+	text-align: left;
+	width:136px;
+}
+.defaultTopF2>ul>li>ul>li>span{
+	font-weight: bold;
+	cursor: pointer;
+}
+.defaultTopF2>ul>li>ul>li>span:hover{
+	text-decoration: underline;
+}
+.defaultTopF2>ul>li>ul>li>ul>li{
+	padding-top:20px;
+}
+.defaultTopF2>ul>li>ul>li>ul>li:hover{
+	text-decoration: underline;
+}
+.defaultTopF2>ul>li:hover>ul{
+	display:block;
+}
+/* 二级菜单结束 */
+/* 登录后顶部样式 */
+.arrow{
+	background:url(../images/01_header_arrow.png) no-repeat 100%;
+	padding-right: 14px;
+	color:#000;
+}
+.my_count{
+	position: relative;
+}
+.my_count>ul{
+	display: none;
+	background-color: #f4f4f4;
+	width: 140px;
+	color:#000;
+	font-size: 14px;
+	text-align: center;
+	padding: 10px 10px;
+	position: absolute;
+	top:30px;
+	left: -40px;
+	z-index: 999;
+}
+.my_count:hover>ul{
+	display: block;
+}
+.my_count .line{
+	width:100%;
+	height:1px;
+	background-color:#ccc;
+	margin:5px 0;
+}
+.my_count .top_info{
+	margin-top:-10px;
+}
+/* 购物车二级菜单 */
+.head_cart ul li h3{
+	color:#000;
+	margin-left: 10px;
+}
+.head_cart{
+	position: relative;
+}
+.head_cart ul{
+	display: none;
+	position: absolute;
+	left:-180px;
+	background-color: #f5f5f5;
+	width:330px;
+	padding-top:10px;
+	z-index:999;
+	color:#000;
+}
+.list_img::after{
+	content:"";
+	display: block;
+	clear: both;
+}
+.list_img{
+	margin-left: 10px;
+	margin-top:15px;
+}
+.list_img>div{
+	float: left;
+	height: 96px;
+}
+.list_img>div:first-child{
+	width:60px;
+}
+.head_cart ul img{
+	width: 100%;
+}
+.head_cart:hover>ul{
+	display: block;
+}
+.list_center{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-left:10px;
+}
+.list_center span{
+	line-height: 15px;
+}
+.list_center span p{
+	margin-top:10px;
+}
+.list_right{
+	margin-left:70px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	line-height: 15px;
+}
+.list_right p{
+	margin-bottom: 5px;
+}
+.head_cart .list_bottom{
+	height:50px;
+	line-height: 50px;
+	background-color: #e6e6e6;
+	margin-top:10px;
+	padding:0 10px;
+	font-size: 14px;
+}
+.head_cart .list_bottom a{
+	background-color: #d62f2f;
+	color:#fff;
+	font-size: 12px;
+	padding:6px;
+	margin-left:160px;
+}
+/* 购物车二级菜单结束 */

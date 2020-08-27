@@ -115,6 +115,11 @@
 	border:1px solid #000;
 	line-height: 30px;
 	text-align: center;
+	transition:background-color 0.3s linear,color 0.3s linear; 
+}
+.delete_button:hover{
+	background-color: #999;
+	color:#000;
 }
 .input_div{
 	width: 24px;height: 24px;

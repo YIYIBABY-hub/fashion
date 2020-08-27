@@ -257,13 +257,14 @@
 	line-height:48px;
 	text-align: center;
 	font-size: 18px;	
+	cursor: pointer;
 }
 .addCart a{
 	padding:4px 0 4px 36px;
 	background:url(../images/04_cart.png) no-repeat ;
 	color:#000;
 }
-.addCart:hover{
+.addCart:hover,.buyNow:hover{
 	background-color: #4D4D4D;
 }
 .addCart:hover a{
